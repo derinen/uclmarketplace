@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bloomsbury",
+    "name": "Bloomsbury campus meeting point",
+    "method": "Meet in person",
+    "availability": "Arrange a time together"
+  },
+  {
+    "id": "east",
+    "name": "UCL East campus meeting point",
+    "method": "Meet in person",
+    "availability": "Arrange a time together"
+  },
+  {
+    "id": "reception",
+    "name": "Accommodation reception",
+    "method": "Reception collection",
+    "availability": "During agreed staffed hours · proposed"
+  },
+  {
+    "id": "locker",
+    "name": "Campus locker",
+    "method": "Self-service collection",
+    "availability": "During approved access hours · proposed"
+  }
+]

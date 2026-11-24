@@ -1,0 +1,135 @@
+[
+  {
+    "id": "sample-0",
+    "title": "Model-making offcuts",
+    "price": 0,
+    "description": "Coarse card, foam board and balsa leftovers.",
+    "category": "architecture",
+    "pickup": "bloomsbury",
+    "anonymous": false,
+    "sellerId": "seller-0",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  },
+  {
+    "id": "sample-1",
+    "title": "Moving-out kitchen bundle",
+    "price": 0,
+    "description": "Two bowls, plates and a mug.",
+    "category": "free",
+    "pickup": "reception",
+    "anonymous": true,
+    "sellerId": "seller-1",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  },
+  {
+    "id": "sample-2",
+    "title": "Compact rice cooker",
+    "price": 12,
+    "description": "Small working cooker, ideal for a shared kitchen.",
+    "category": "kitchen",
+    "pickup": "east",
+    "anonymous": false,
+    "sellerId": "seller-2",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  },
+  {
+    "id": "sample-3",
+    "title": "Rain jacket",
+    "price": 10,
+    "description": "Lightweight medium jacket, gently used.",
+    "category": "clothes",
+    "pickup": "bloomsbury",
+    "anonymous": false,
+    "sellerId": "seller-3",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  },
+  {
+    "id": "sample-4",
+    "title": "Folding study chair",
+    "price": 8,
+    "description": "Folds flat for easy collection.",
+    "category": "furniture",
+    "pickup": "east",
+    "anonymous": false,
+    "sellerId": "seller-4",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  },
+  {
+    "id": "sample-5",
+    "title": "Adjustable desk lamp",
+    "price": 7,
+    "description": "Warm light and a movable arm.",
+    "category": "electronics",
+    "pickup": "locker",
+    "anonymous": true,
+    "sellerId": "seller-5",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  },
+  {
+    "id": "sample-6",
+    "title": "Construction economics textbook",
+    "price": 15,
+    "description": "Used copy with a few highlights.",
+    "category": "books",
+    "pickup": "bloomsbury",
+    "anonymous": false,
+    "sellerId": "seller-6",
+    "sellerName": "Sample UCL member",
+    "state": "published",
+    "reviews": [
+      {
+        "stars": 5,
+        "comment": "Easy collection.",
+        "reviewerId": "sample-buyer"
+      }
+    ]
+  }
+]

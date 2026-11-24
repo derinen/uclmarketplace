@@ -1,0 +1,37 @@
+[
+  {
+    "id": "architecture",
+    "name": "Architecture materials",
+    "icon": "📐"
+  },
+  {
+    "id": "free",
+    "name": "Free stuff",
+    "icon": "🎁"
+  },
+  {
+    "id": "kitchen",
+    "name": "Kitchen appliances",
+    "icon": "🍳"
+  },
+  {
+    "id": "clothes",
+    "name": "Clothes",
+    "icon": "🧥"
+  },
+  {
+    "id": "furniture",
+    "name": "Furniture",
+    "icon": "🪑"
+  },
+  {
+    "id": "electronics",
+    "name": "Electronics",
+    "icon": "💡"
+  },
+  {
+    "id": "books",
+    "name": "Books & textbooks",
+    "icon": "📚"
+  }
+]

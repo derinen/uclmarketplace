@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UCL Market Place</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" type="module"></script>
+</head>
+<body>
+<header><a class="brand" href="./">UCL Market Place</a><nav><a href="#browse">Browse</a><a href="#events">Events</a><button id="account">Demo sign-in</button></nav></header>
+<main>
+<p class="notice">Student-led prototype · Sample listings and pickup points · Use fictional details</p>
+<section class="hero"><div><p class="eyebrow">THE UCL REUSE MARKETPLACE</p><h1>Moving out?<br>Pass it on.</h1><p>Buy, sell and give away everyday essentials within the UCL community.</p><button id="post">+ Post a listing</button></div><div class="graphic" aria-hidden="true">↻</div></section>
+<section id="browse"><h2>Browse listings</h2><div class="filters"><label>Search <input id="search" type="search" placeholder="Try ‘desk lamp’"></label><label>Category <select id="category"></select></label><label class="check"><input id="anonymous" type="checkbox"> Anonymous posts only</label></div>
+<p id="status" role="status"></p><div id="cards" class="grid"></div></section>
+<section id="events"><h2>On campus</h2><div id="event-list" class="grid"></div><p>Proposed Instagram handle for event and move-out updates <strong>@uclmarketplace</strong></p></section>
+</main>
+<dialog id="panel" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close" aria-label="Close dialog">✕</button></div><div id="body"></div></dialog>
+<footer>UCL Market Place · Sustainability Ambassador project prototype</footer>
+</body></html>
