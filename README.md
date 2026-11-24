@@ -22,6 +22,7 @@ From the extracted directory run `python3 -m http.server 8000` and visit [http:/
 3. Check **Post anonymously after moderator approval** to send the listing for review. In the account menu, switch to **Demo moderator** and open the moderation queue. Approve it and check that it appears under **Anonymous posts only** with the seller name hidden from the listing.
 4. Open a sample listing and leave feedback from a demo account. View the updated seller rating.
 5. Scroll to **On campus** for the proposed pop-up launch and future reuse events.
+6. Post a community request, such as “Looking to buy a bike”. Requests are saved only in the current browser; the notification form is a non-submitting demo, and Instagram links to [@uclmarketplace](https://www.instagram.com/uclmarketplace/).
 
 ## Editable data
 
@@ -34,4 +35,4 @@ From the extracted directory run `python3 -m http.server 8000` and visit [http:/
 
 Use unique listing IDs and reference existing category and pickup IDs. Prices are numbers in pounds. A price of 0 appears as Free, including when the item also belongs to a subject category.
 
-Demo changes stay in the current browser. Clear site data to reset the demo. A live UCL-only service needs UCL Microsoft sign-in, shared data, server-side permissions and approved pickup arrangements. See [the handover](README-HANDOVER.md).
+Demo changes stay in the current browser. Clear site data to reset the demo. Request posts are local to the browser and are not shared; notification sign-ups do not send or store email addresses. A live UCL-only service needs UCL Microsoft sign-in, shared data, server-side permissions and approved pickup arrangements. See [the handover](README-HANDOVER.md).

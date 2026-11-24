@@ -3,19 +3,241 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>UCL Market Place</title>
+<title>UCL Marketplace</title>
 <link rel="stylesheet" href="style.css">
 <script src="app.js" type="module"></script>
 </head>
+
 <body>
-<header><a class="brand" href="./">UCL Market Place</a><nav><a href="#browse">Browse</a><a href="#events">Events</a><button id="account">Demo sign-in</button></nav></header>
+<header>
+  <a class="brand" href="./"><img class="ucl-logo" src="assets/ucl-logo.png" alt="UCL logo"><span>Marketplace</span></a>
+  <nav><a href="#browse">Browse</a><a href="#requests">Requests</a><a href="#impact">Our impact</a><a href="#events">Events</a><a href="#pickup">Pickup</a><button id="account">Demo sign-in</button></nav>
+</header>
 <main>
-<p class="notice">Student-led prototype · Sample listings and pickup points · Use fictional details</p>
-<section class="hero"><div><p class="eyebrow">THE UCL REUSE MARKETPLACE</p><h1>Moving out?<br>Pass it on.</h1><p>Buy, sell and give away everyday essentials within the UCL community.</p><button id="post">+ Post a listing</button></div><div class="graphic" aria-hidden="true">↻</div></section>
-<section id="browse"><h2>Browse listings</h2><div class="filters"><label>Search <input id="search" type="search" placeholder="Try ‘desk lamp’"></label><label>Category <select id="category"></select></label><label class="check"><input id="anonymous" type="checkbox"> Anonymous posts only</label></div>
-<p id="status" role="status"></p><div id="cards" class="grid"></div></section>
-<section id="events"><h2>On campus</h2><div id="event-list" class="grid"></div><p>Proposed Instagram handle for event and move-out updates <strong>@uclmarketplace</strong></p></section>
+<p class="notice">Independent student-led prototype · Not an official UCL service · Sample listings and pickup points</p>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">WELCOME TO UCL MARKETPLACE</p>
+    <h1>Good things<br>go round.</h1>
+    <p>Buy, sell or give away the things you already have. A second-hand marketplace concept for UCL students and staff.</p>
+    <a class="button-link" href="#browse">Explore listings</a>
+  </div>
+  <aside class="hero-attribution" aria-label="Project brought to you by BSSC Green Impact Builders">
+    <p class="attribution-label">Brought to you by</p>
+    <h2>BSSC Green Impact Builders</h2>
+    <img src="assets/green-impact-footer.png" alt="We're part of Green Impact — improving the environmental impact of UCL">
+  </aside>
+</section>
+<section id="browse">
+  <h2>Browse listings</h2>
+  <p class="section-intro">A few fictional finds from around the UCL community.</p>
+  <div class="filters">
+    <label>Search <input id="search" type="search" placeholder="Try ‘desk lamp’"></label>
+    <label>Category
+      <select id="category">
+        <option value="">All categories</option>
+        <option value="architecture">Architecture materials</option>
+        <option value="free">Free stuff</option>
+        <option value="kitchen">Kitchen appliances</option>
+        <option value="clothes">Clothes</option>
+        <option value="furniture">Furniture</option>
+        <option value="electronics">Electronics</option>
+        <option value="books">Books &amp; textbooks</option>
+      </select>
+    </label>
+    <label class="check"><input id="anonymous" type="checkbox"> Anonymous posts only</label>
+  </div>
+  <p id="status" role="status"></p>
+  <div id="cards" class="grid">
+    <article class="listing-card" id="listing-sample-0" data-category="architecture">
+      <img class="listing-photo" src="assets/listing-architecture.jpg" alt="Architectural scale model of a building" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Architectural_model_of_Museu_do_Design_e_da_Moda_52.jpg" target="_blank" rel="noopener noreferrer">Photo by Kent Wang · CC BY 4.0</a></p>
+      <p class="listing-category">Architecture materials</p>
+      <h3><a class="listing-title" href="#listing-sample-0" data-listing-link>Model-making offcuts</a></h3>
+      <p class="listing-description">Coarse card, foam board and balsa leftovers.</p>
+      <div class="listing-meta"><strong>Free</strong><span>Bloomsbury pickup</span></div>
+    </article>
+    <article class="listing-card" id="listing-sample-1" data-category="free" data-anonymous="true">
+      <img class="listing-photo" src="assets/listing-kitchen-bundle.jpg" alt="Stacks of bowls and plates" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:HK_TKO_%E5%B0%87%E8%BB%8D%E6%BE%B3_Tseung_Kwan_O_PopCorn_mall_shop_Francfranc_household_store_January_2022_Px3_tabelware_plates_bowls.jpg" target="_blank" rel="noopener noreferrer">Photo by CAHOGNSUIE 202 KADPA · CC BY-SA 4.0</a></p>
+      <p class="listing-category">Free stuff</p>
+      <h3><a class="listing-title" href="#listing-sample-1" data-listing-link>Moving-out kitchen bundle</a></h3>
+      <p class="listing-description">Two bowls, plates and a mug, ready for a new home.</p>
+      <div class="listing-meta"><strong>Free</strong><span>Reception pickup</span></div>
+    </article>
+    <article class="listing-card" id="listing-sample-2" data-category="kitchen">
+      <img class="listing-photo" src="assets/listing-rice-cooker.jpg" alt="Red Rival rice cooker" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Rival_Rice_Cooker.jpg" target="_blank" rel="noopener noreferrer">Photo by Jugo Yokomizo · CC BY-SA 4.0</a></p>
+      <p class="listing-category">Kitchen appliances</p>
+      <h3><a class="listing-title" href="#listing-sample-2" data-listing-link>Compact rice cooker</a></h3>
+      <p class="listing-description">Small working cooker, ideal for a shared kitchen.</p>
+      <div class="listing-meta"><strong>£12</strong><span>East campus pickup</span></div>
+    </article>
+    <article class="listing-card" id="listing-sample-5" data-category="electronics" data-anonymous="true">
+      <img class="listing-photo" src="assets/listing-desk-lamp.jpg" alt="Black adjustable desk lamp" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:A_desk_lamp.jpg" target="_blank" rel="noopener noreferrer">Photo by AirbusA330772673 · CC BY-SA 4.0</a></p>
+      <p class="listing-category">Electronics</p>
+      <h3><a class="listing-title" href="#listing-sample-5" data-listing-link>Adjustable desk lamp</a></h3>
+      <p class="listing-description">Warm light and a movable arm for late study sessions.</p>
+      <div class="listing-meta"><strong>£7</strong><span>Locker collection</span></div>
+    </article>
+    <article class="listing-card" id="listing-sample-4" data-category="furniture">
+      <img class="listing-photo" src="assets/listing-chair.jpg" alt="Antique wooden folding chair" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Folding_chair_MET_DP-14129-132.jpg" target="_blank" rel="noopener noreferrer">Image courtesy of The Met · CC0</a></p>
+      <p class="listing-category">Furniture</p>
+      <h3><a class="listing-title" href="#listing-sample-4" data-listing-link>Folding study chair</a></h3>
+      <p class="listing-description">Folds flat for easy collection and storage.</p>
+      <div class="listing-meta"><strong>£8</strong><span>East campus pickup</span></div>
+    </article>
+    <article class="listing-card" id="listing-sample-6" data-category="books">
+      <img class="listing-photo" src="assets/listing-textbook.jpg" alt="Textbooks displayed in a library" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Textbook_display_3_in_Textbook_Library,_National_Academy_for_Educational_Research_(%E5%9C%8B%E5%AE%B6%E6%95%99%E8%82%B2%E7%A0%94%E7%A9%B6%E9%99%A2%E6%95%99%E7%A7%91%E6%9B%B8%E5%9C%96%E6%9B%B8%E9%A4%A8).jpg" target="_blank" rel="noopener noreferrer">Photo by Jonashtand · CC BY-SA 4.0</a></p>
+      <p class="listing-category">Books &amp; textbooks</p>
+      <h3><a class="listing-title" href="#listing-sample-6" data-listing-link>Construction economics textbook</a></h3>
+      <p class="listing-description">Used copy with a few highlights.</p>
+      <div class="listing-meta"><strong>£15</strong><span>Bloomsbury pickup</span></div>
+    </article>
+    <article class="listing-card" id="listing-sample-3" data-category="clothes">
+      <img class="listing-photo" src="assets/listing-rain-jacket.jpg" alt="Red hooded Gore-Tex rain jacket" loading="lazy" decoding="async">
+      <p class="photo-credit"><a href="https://commons.wikimedia.org/wiki/File:Early_Gore-Tex_hooded_rain_jacket.jpg" target="_blank" rel="noopener noreferrer">Photo by Joe Mabel · CC BY-SA 4.0</a></p>
+      <p class="listing-category">Clothes</p>
+      <h3><a class="listing-title" href="#listing-sample-3" data-listing-link>Lightweight rain jacket</a></h3>
+      <p class="listing-description">Gently used, medium size, ready for London weather.</p>
+      <div class="listing-meta"><strong>£10</strong><span>Bloomsbury pickup</span></div>
+    </article>
+  </div>
+</section>
+<section id="requests">
+  <p class="eyebrow section-label">COMMUNITY WISHLIST</p>
+  <h2>Looking for something?</h2>
+  <p class="section-intro">Post a request like “Looking to buy a bike”. Requests in this demo are saved locally and are not visible to others.</p>
+  <div class="request-layout">
+    <form id="request-form" class="request-form">
+      <label for="request-title">What are you looking for?
+        <input id="request-title" name="title" type="text" maxlength="80" placeholder="Looking to buy a bike" required>
+      </label>
+      <label for="request-category">Category
+        <select id="request-category" name="category">
+          <option value="">Any category</option>
+          <option value="architecture">Architecture materials</option>
+          <option value="free">Free stuff</option>
+          <option value="kitchen">Kitchen appliances</option>
+          <option value="clothes">Clothes</option>
+          <option value="furniture">Furniture</option>
+          <option value="electronics">Electronics</option>
+          <option value="books">Books &amp; textbooks</option>
+        </select>
+      </label>
+      <label for="request-details">A few details
+        <textarea id="request-details" name="details" rows="3" maxlength="300" placeholder="Share size, condition or anything else that would help." required></textarea>
+      </label>
+      <label for="request-budget">Budget (optional, £)
+        <input id="request-budget" name="budget" type="number" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 50">
+      </label>
+      <button type="submit">Post request</button>
+      <p class="demo-note">Demo only: requests are saved in this browser and are not visible to other users.</p>
+      <p id="request-status" role="status" aria-live="polite"></p>
+    </form>
+    <div class="request-list">
+      <h3>Requests saved in this browser</h3>
+      <div id="request-cards" class="request-cards" aria-live="polite">
+        <p class="empty-requests">No requests yet. You could be the first!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="impact" class="impact">
+  <div class="impact-copy">
+    <p class="eyebrow">SUSTAINABILITY IMPACT</p>
+    <h2>Keep useful things in circulation</h2>
+    <p>A real pilot could track completed exchanges and use a move-out survey to learn what would otherwise be discarded.</p>
+  </div>
+  <div class="impact-stat"><strong>7</strong><span>example listings</span></div>
+</section>
+<section id="events">
+  <p class="eyebrow section-label">POP-UP EVENTS · PROPOSED</p>
+  <h2>Campus Swap Day</h2>
+  <div class="feature-card">
+    <div class="feature-icon" aria-hidden="true">↔</div>
+    <div><p class="listing-category">Bloomsbury campus</p><h3>Bring something along. Find something useful.</h3><p>Imagine a lunchtime launch pop-up. Bring a clean item to swap, pick up something useful, or try the marketplace in person.</p><p class="proposed-note">Date and venue to be confirmed</p></div>
+  </div>
+</section>
+<section id="pickup">
+  <p class="eyebrow section-label">CAMPUS PICKUP</p>
+  <h2>Meet somewhere familiar</h2>
+  <p class="section-intro">Illustrative pickup points. For a live pilot, meet in busy, well-lit shared spaces during opening hours. <a href="https://maps.ucl.ac.uk/maps/downloads/campus-map-2014.pdf" target="_blank" rel="noopener noreferrer">View UCL campus map (PDF, 2014)</a></p>
+  <div class="grid pickup-grid">
+    <article class="pickup-card">
+      <span class="pickup-pin" aria-hidden="true">⌖</span>
+      <h3>Bloomsbury campus</h3>
+      <p>Arrange a time to meet at a familiar campus spot.</p>
+      <span class="pickup-type">Meet in person</span>
+      <iframe class="location-preview" title="Map preview of the UCL Bloomsbury campus area" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.141%2C51.520%2C-0.128%2C51.529&amp;layer=mapnik" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      <p class="preview-caption">Campus area only; agree an exact meeting point separately.</p>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=UCL+Main+Campus%2C+Gower+Street%2C+London" target="_blank" rel="noopener noreferrer">Open Bloomsbury in Google Maps ↗</a>
+    </article>
+    <article class="pickup-card">
+      <span class="pickup-pin" aria-hidden="true">⌖</span>
+      <h3>UCL East campus</h3>
+      <p>Arrange a time to meet at a familiar campus spot.</p>
+      <span class="pickup-type">Meet in person</span>
+      <iframe class="location-preview" title="Map preview of the UCL East campus area" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.019%2C51.535%2C-0.005%2C51.542&amp;layer=mapnik" loading="lazy" referrerpolicy="no-referrer"></iframe>
+      <p class="preview-caption">Campus area only; agree an exact meeting point separately.</p>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=UCL+East%2C+Marshgate%2C+London" target="_blank" rel="noopener noreferrer">Open UCL East in Google Maps ↗</a>
+    </article>
+    <article class="pickup-card">
+      <span class="pickup-pin" aria-hidden="true">⌖</span>
+      <h3>Accommodation reception</h3>
+      <p>Reception collection during agreed staffed hours.</p>
+      <span class="pickup-type">Proposed · requires permission</span>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=UCL+student+accommodation%2C+London" target="_blank" rel="noopener noreferrer">Search UCL accommodation in Google Maps ↗</a>
+    </article>
+    <article class="pickup-card">
+      <span class="pickup-pin" aria-hidden="true">⌖</span>
+      <h3>Campus locker</h3>
+      <p>Self-service collection during approved access hours.</p>
+      <span class="pickup-type">Proposed · requires permission</span>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=UCL+campus+lockers%2C+London" target="_blank" rel="noopener noreferrer">Search UCL campus lockers in Google Maps ↗</a>
+    </article>
+  </div>
+  <p class="map-note">Google Maps searches for accommodation and lockers are suggestions only; no specific collection points are confirmed.</p>
+</section>
+<section id="updates" class="updates-section">
+  <div>
+    <p class="eyebrow section-label">STAY IN THE LOOP</p>
+    <h2>Follow along</h2>
+    <p>Find us on Instagram for event and move-out updates: <a href="https://www.instagram.com/uclmarketplace/" target="_blank" rel="noopener noreferrer">@uclmarketplace</a>.</p>
+  </div>
+  <form id="notification-form" class="notification-form">
+    <h3>Sign up for notifications</h3>
+    <p>Want to hear when marketplace updates launch?</p>
+    <label for="notification-email">Email address
+      <input id="notification-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+    </label>
+    <button type="submit">Notify me</button>
+    <p class="demo-note">Notifications aren't connected in this demo. Your email won't be sent or stored.</p>
+    <p id="notification-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
 </main>
-<dialog id="panel" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close" aria-label="Close dialog">✕</button></div><div id="body"></div></dialog>
-<footer>UCL Market Place · Sustainability Ambassador project prototype</footer>
+<dialog id="panel" aria-labelledby="dialog-title">
+  <div class="dialog-top"><h2 id="dialog-title"></h2><button id="close" aria-label="Close listing">✕</button></div>
+  <div id="body"></div>
+</dialog>
+<dialog id="auth-panel" aria-labelledby="auth-title">
+  <div class="dialog-top"><h2 id="auth-title">Sign in to UCL Marketplace</h2><button id="auth-close" aria-label="Close sign-in">✕</button></div>
+  <p>Use your UCL email address ending in <strong>@ucl.ac.uk</strong>.</p>
+  <div class="auth-mode" role="group" aria-label="Choose account action">
+    <button class="auth-mode-button is-active" type="button" data-auth-mode="signin" aria-pressed="true">Sign in</button>
+    <button class="auth-mode-button" type="button" data-auth-mode="create" aria-pressed="false">Create account</button>
+  </div>
+  <form id="auth-form">
+    <label for="ucl-email">UCL email</label>
+    <input id="ucl-email" name="email" type="email" autocomplete="email" placeholder="name@ucl.ac.uk" required>
+    <button id="auth-submit" type="submit">Continue to sign in</button>
+    <p class="auth-note">Demo only: no email is sent, and no account is created or authenticated.</p>
+    <p id="auth-status" role="status" aria-live="polite"></p>
+  </form>
+</dialog>
+<footer>UCL Marketplace · Sustainability Ambassador project prototype · Sample details are illustrative</footer>
 </body></html>
